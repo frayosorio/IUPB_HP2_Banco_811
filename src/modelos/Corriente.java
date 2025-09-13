@@ -4,8 +4,9 @@ public class Corriente extends Cuenta {
 
     private double sobregiro;
 
-    public Corriente(String titular, String numero, double saldo) {
+    public Corriente(String titular, String numero, double saldo, double sobregiro) {
         super(titular, numero, saldo);
+        this.sobregiro = sobregiro;
     }
 
     @Override
