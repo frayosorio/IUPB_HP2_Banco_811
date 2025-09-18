@@ -1,7 +1,6 @@
 package modelos;
 
 public class Ahorros extends Cuenta {
-    private final double TASA_INTERES = 0.02;
 
     public Ahorros(String titular, String numero, double saldo) {
         super(titular, numero, saldo);
@@ -17,11 +16,6 @@ public class Ahorros extends Cuenta {
             System.out.println("Fondos insuficientes para este retiro");
             return false;
         }
-    }
-
-    public void abonarIntereses() {
-        setSaldo(getSaldo() * (1 + TASA_INTERES));
-        System.out.println("Intereses mensuales abonados. Nuevo saldo:" + getSaldo());
     }
 
 }
